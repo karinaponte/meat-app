@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Restaurant } from 'app/restaurants/restaurant/restaurant.model';
-import { RestaurantService } from 'app/restaurants/restaurants.service';
+import { RestaurantsService } from 'app/restaurants/restaurants.service';
 
 @Component({
   selector: 'mt-restaurant-detail',
@@ -11,7 +11,7 @@ export class RestaurantDetailComponent implements OnInit {
 
   restaurant: Restaurant
 
-  constructor(private restaurantsService: RestaurantService,
+  constructor(private restaurantsService: RestaurantsService,
     private route: ActivatedRoute) { }
 
   ngOnInit() {
