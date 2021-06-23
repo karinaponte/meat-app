@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ErrorHandler, OnInit } from '@angular/core';
 import { Restaurant } from './restaurant/restaurant.model';
 import { RestaurantService } from './restaurants.service';
 
